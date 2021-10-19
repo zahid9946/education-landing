@@ -1,0 +1,792 @@
+/*---------- Bacic Setup----------*/
+
+html {
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.8;
+    overflow-x: hidden;
+    letter-spacing: .1rem;
+    font-family: 'Work Sans 400';
+    font-style: normal;
+    font-size: 18px
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a,
+span,
+label {
+    display: inline-block;
+}
+
+ul li {
+    list-style: none
+}
+
+a,
+a:focus {
+    text-decoration: none;
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+button,
+input,
+textarea {
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+button[type="submit"],
+button[type="reset"],
+button[type="button"] {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*---------- Font Size----------*/
+
+.f-size-12 {
+    font-size: 12px;
+}
+
+.f-size-14 {
+    font-size: 14px;
+}
+
+.f-size-16 {
+    font-size: 16px;
+}
+
+.f-size-20 {
+    font-size: 20px;
+}
+
+.f-size-24 {
+    font-size: 2.4rem;
+}
+
+.f-size-30 {
+    font-size: 3rem;
+}
+
+.f-size-40 {
+    font-size: 4rem;
+}
+
+
+/*---------- Font Color----------*/
+
+.f-color-ffc {
+    color: #ffc178
+}
+
+.f-color-5a {
+    color: #5a6e79
+}
+
+.f-color-ff {
+    color: #fff
+}
+
+.f-color-25 {
+    color: #252c3a
+}
+
+.f-color-ff5 {
+    color: #ff5f72
+}
+
+.f-color-43 {
+    color: #43cb83
+}
+
+.f-color-96 {
+    color: #969595
+}
+
+.f-color-4a {
+    color: #4a4a4a
+}
+
+.f-color-6b {
+    color: #6b6b6b
+}
+
+.f-color-89 {
+    color: #898789
+}
+
+
+/*---------- Background Color----------*/
+
+.bg-color-ffc {
+    background: #ffc178;
+}
+
+.bg-color-43 {
+    background: #43cb83;
+}
+
+.bg-color-ff {
+    background: #fff;
+}
+
+.bg-color-25 {
+    background: #252c3a;
+}
+
+.bg-color-1d {
+    background: #1d232e;
+}
+
+.bg-color-f1 {
+    background: #f1e3fb;
+}
+
+.bg-color-e3 {
+    background: #e3fbf9;
+}
+
+.bg-color-fb {
+    background: #fbefe3;
+}
+
+.bg-color-f3 {
+    background: #f3fbe3;
+}
+
+.bg-color-e3f {
+    background: #e3f3fb;
+}
+
+
+/*==================== Fonts ====================*/
+
+@font-face {
+    font-family: 'Roboto 400';
+    src: url('../font/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto 700';
+    src: url('../font/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font-r-400 {
+    font-family: 'Roboto 400';
+}
+
+.font-r-700 {
+    font-family: 'Roboto 700';
+}
+
+
+/*==================== Start Reusable Components ====================*/
+
+.transition-linear {
+    -webkit-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.transition-ease {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.apply-btn {
+    min-width: 13.2rem;
+    height: 4.4rem;
+    filter: drop-shadow(0px 9px 35px #e3e3e9);
+}
+
+.hero-btn:hover,
+.apply-btn:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+
+.pw {
+    max-width: 665px;
+}
+
+
+/*==================== End Reusable Components ====================*/
+
+
+/*==================== Start Header Style ====================*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    z-index: 999;
+    background: transparent;
+    opacity: .9;
+}
+
+nav .logo img {
+    max-width: 6rem;
+}
+
+nav .main-menu ul li a {
+    letter-spacing: .1rem;
+    position: relative;
+}
+
+nav .main-menu ul li:not(:last-child) a:hover,
+nav .main-menu ul li a .active {
+    color: #ffc177;
+    font-weight: 700;
+}
+
+.apply-btn:hover {
+    filter: none;
+    border: 1px solid;
+}
+
+
+/* Home Page 2 */
+
+nav .main-menu ul li a:hover,
+nav .main-menu ul li a .active {
+    color: #43cb83;
+}
+
+
+/* Animation Underline */
+
+nav .main-menu ul li:not(:last-child) a:after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    background: #ffc177;
+    width: 0%;
+    bottom: 0;
+    left: 50%;
+    transition: .5s;
+}
+
+
+/* Home Page 2 */
+
+nav .main-menu ul li:not(:last-child) a:after {
+    background: #43cb83;
+}
+
+nav .main-menu ul li a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+
+/*---------- Hamburger Menu Btn ----------*/
+
+.main-menu.open-menu {
+    background: #222;
+}
+
+.menu-show-hide-btn {
+    position: relative;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background: #ffc177;
+    margin: 6px 0;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    -ms-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-10px, -7px);
+    -ms-transform: rotate(45deg) translate(-10px, -7px);
+    transform: rotate(45deg) translate(-10px, -7px);
+}
+
+
+/*==================== Register Modal ====================*/
+
+.modal-content {
+    padding: 3rem;
+}
+
+.modal-header {
+    padding: 0 0 1rem!important;
+}
+
+form.login-apply-form button {
+    margin-top: 25px;
+}
+
+.modal-content {
+    background: #fff !important;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    outline: 0;
+    border-radius: 8px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 80px #ffffff;
+}
+
+
+/*---------- Sticky Menu ----------*/
+
+.sticky-menu {
+    background: #fff;
+}
+
+
+/*==================== End Header Style ====================*/
+
+
+/*==================== Start Hero Style ====================*/
+
+.hero-bg {
+    background: url(../images/banner/banner-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-title {
+    padding: 30rem 0 48rem;
+    padding-right: 118px;
+}
+
+.hero-btn {
+    min-width: 22rem;
+    height: 5.8rem;
+    line-height: 5.8rem;
+    font-size: 1.8rem
+}
+
+
+/*==================== Home Page 2 ====================*/
+
+.hero-bg2 {
+    background: url(../images/banner/banner-bg2.png);
+    width: 100% !important;
+}
+
+.hero-title2 {
+    padding: 30rem 38rem 58rem;
+}
+
+
+/*==================== End Hero Style ====================*/
+
+
+/*==================== Start Dept Style ====================*/
+
+.around-section,
+.dept-section,
+.news-section {
+    overflow-x: hidden;
+}
+
+.dept-section {
+    margin-top: -80px;
+    overflow: hidden;
+}
+
+.dept-box-content {
+    position: absolute;
+    top: 77%;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+a.dept-box:hover,
+.single-dept-box:hover {
+    transform: translateY(-15px);
+}
+
+
+/*==================== Home Page 2 ====================*/
+
+.dept-section2 {
+    margin-top: -22rem;
+    overflow: hidden;
+}
+
+.single-dept-box {
+    padding: 6.5rem 0;
+}
+
+.single-dept-box img {
+    max-height: 7rem;
+}
+
+a.single-dept-box {
+    min-height: 287px;
+}
+
+
+/*==================== End Dept Style ====================*/
+
+
+/*==================== Start Cta Style ====================*/
+
+.cta-bg {
+    background: url(../images/banner/banner3.png);
+    background-repeat: no-repeat;
+}
+
+.cta-title span {
+    color: #fb384d
+}
+
+.cta-title {
+    padding: 20.7% 0;
+}
+
+.sign-up-form {
+    padding: 4.5rem 5.5rem 4.5rem 4.0rem;
+    z-index: 11;
+    overflow: hidden;
+    filter: drop-shadow(0px 9px 35px #e3e3e9);
+    margin-top: -8rem;
+}
+
+.sign-up-form:after {
+    position: absolute;
+    content: "";
+    height: 80rem;
+    width: 80rem;
+    bottom: 6rem;
+    left: 8rem;
+    border-radius: 50%;
+    border: 10rem solid #EBF7FC;
+    z-index: -1;
+}
+
+.sign-up-form p,
+.login-apply-form p {
+    color: #202020;
+}
+
+.sign-up-form input::placeholder,
+.login-apply-form input::placeholder {
+    font-size: 14px;
+    font-family: 'Work Sans 500';
+    color: #5a6e79;
+    border-bottom: #d7e4ed;
+}
+
+.sign-up-form label,
+.login-apply-form label,
+.already-account {
+    color: #87959c;
+    font-size: 13px;
+}
+
+.already-account:hover {
+    text-decoration: underline;
+    color: #87959c;
+}
+
+.sign-up-form input:not(:last-child),
+.login-apply-form input:not(:last-child) {
+    border-bottom: 1px solid #d7e4ed;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.sign-up-form input[type="checkbox"],
+.login-apply-form input[type="checkbox"] {
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+.apply-btn {
+    line-height: 4.4rem;
+    outline: 0
+}
+
+
+/*==================== Login Modal ====================*/
+
+form.login-form {
+    padding: 30px 20px;
+}
+
+.login-form input:not(:last-child) {
+    border: 1px solid #f1e3fc;
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 30px;
+}
+
+.login-form button {
+    padding: 8px;
+    font-weight: 700;
+    border-radius: 25px;
+}
+
+.modal-header {
+    padding: 3rem 3rem 0;
+    border-bottom: 1px solid transparent;
+}
+
+
+/*==================== End Cta Style ====================*/
+
+
+/*==================== Start News Style ====================*/
+
+.apply-btn.news-btn {
+    min-width: 16.7rem;
+    height: 5.2rem;
+    line-height: 5.2rem !important;
+}
+
+
+/*==================== End News Style ====================*/
+
+
+/*==================== Start About chairman Style ====================*/
+
+.play-btn {
+    position: absolute;
+    left: 55%;
+    top: 40%;
+}
+
+.play-btn span {
+    height: 9.5rem;
+    width: 9.5rem;
+    line-height: 9.5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%
+}
+
+.counter-up p {
+    margin-top: -20px;
+}
+
+
+/*==================== End About chairman Style ====================*/
+
+
+/*==================== Start Around Style ====================*/
+
+.right-shape {
+    background: url(../images/side-img/right-shape.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.around-box {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    overflow: hidden;
+}
+
+.around-content {
+    padding: 20px 15px;
+}
+
+.around-box:hover img {
+    transform: scale(1.07);
+    transition: .5s all;
+}
+
+.around-box:hover h5 {
+    color: #ffc178;
+    text-decoration: underline;
+    box-shadow: none;
+}
+
+.around-content a:hover {
+    color: #ffc178;
+}
+
+.around-box:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.sell-info span {
+    position: absolute;
+    left: 0;
+    top: 5%;
+    background: #e14b56;
+    padding: 0 5px;
+    font-size: 9px;
+    font-family: 'roboto';
+    font-weight: 700;
+    z-index: 11
+}
+
+.sell-info span:after {
+    position: absolute;
+    content: "";
+    border-left: 13px solid #e14b56;
+    border-top: 11px solid transparent;
+    border-bottom: 14px solid transparent;
+    bottom: -5px;
+}
+
+
+/*==================== End Around Style ====================*/
+
+
+/*==================== Start Footer Style ====================*/
+
+.footer-widget .border {
+    border-color: #303744 !important;
+}
+
+.footer-info li:not(:last-child) {
+    margin-bottom: .8rem;
+}
+
+.footer-links li a:hover span,
+.footer-info li :hover,
+.right-side li a:hover {
+    color: #0089fb
+}
+
+.fourm-content input {
+    background: #fff;
+}
+
+.fourm-content input::placeholder {
+    font-size: 14px;
+    color: #969595;
+    font-family: 'roboto 400';
+}
+
+.fourm-content input {
+    padding: 15px 15px 10px;
+}
+
+.fourm-content button {
+    padding: 0 5px
+}
+
+.fourm-content button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%
+}
+
+
+/*==================== End Footer Style ====================*/
+
+
+/*==================== End Footer Style ====================*/
+
+#pre-loader {
+    background: #000;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    border: 12px solid #ebf7fc;
+    border-top: 12px solid #252b39;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 3s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+
+/* Safari */
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*==================== Start Scroll to Top Btn Style ====================*/
+
+#scroll-up-btn {
+    opacity: 0;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 99999;
+    width: 5rem;
+    height: 5rem;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(255, 217, 19) 0px 0px 0px 9px
+}
+
+
+/*==================== End Scroll to Top Btn Style ====================*/
+
+
+/*==================== Preloader Style ====================*/

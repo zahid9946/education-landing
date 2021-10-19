@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Website Description">
+    <meta name="keywords" content="Website keywords">
+    <!---- Website Title ---->
+    <title>Education Site Page 2</title>
+    <!------- Favicon ------->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/favicon.ico" />
+    <!-------- Fonts Css -------->
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <!-------Icon Fonts Css ------->
+    <link rel="stylesheet" href="assets/css/fontello.css">
+    <!------- Animate Css ------->
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <!------- Lity Css ------->
+    <link rel="stylesheet" href="assets/css/lity.min.css" />
+    <!------- Bootstrap Css ------->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!------- Style Css ------->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!------- Spacing Css ------->
+    <link rel="stylesheet" href="assets/css/spacing.css" />
+    <!------- Responsive Css ------->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+    <!--==================== Pre Loader ====================-->
+    <div id="pre-loader">
+        <div class="loader rounded-pill"></div>
+    </div>
+
+    <!--==================== Start Header Section ====================-->
+    <header class="header-section transition-ease shadow sticky-menu">
+        <nav>
+            <div class="container d-flex justify-content-between align-items-center">
+                <!--======== Logo =========-->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo/logo2.png" alt="logo" class="w-100">
+                    </a>
+                </div>
+
+                <!--========= Menu Show & Hide Hamburger Btn =========-->
+                <div onclick="myFunction(this)" class="menu-show-hide-btn d-block d-lg-none">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+                <!--========== Main Menu ==========-->
+                <div class="main-menu d-flex align-items-center justify-content-center flex-lg-column">
+                    <ul class="text-center text-lg-start">
+                        <li class="d-lg-inline-block me-35">
+                            <a class="d-inline-block f-color-5a transition-linear" href="#around">Study</a>
+                        </li>
+                        <li class="d-lg-inline-block me-35">
+                            <a class="d-inline-block f-color-5a transition-linear" href="#about">About us</a>
+                        </li>
+                        <li class="d-lg-inline-block me-35">
+                            <a class="d-inline-block f-color-5a transition-linear" href="#deparments">Features</a>
+                        </li>
+                        <li class="d-lg-inline-block me-35">
+                            <a class="d-inline-block f-color-5a transition-linear" href="index.html">Pages</a>
+                        </li>
+                        <li class="d-lg-inline-block me-35">
+                            <a class="d-inline-block f-color-5a transition-linear" href="#news">News</a>
+                        </li>
+                        <li class="d-lg-inline-block me-35">
+                            <a class="d-inline-block f-color-5a transition-linear" href="#contact">Contact</a>
+                        </li>
+                        <li class="d-lg-inline-block">
+                            <a class="apply-btn d-lg-flex align-items-lg-center justify-content-lg-center d-inline-block f-color-43 f-size-16 bg-color-ff rounded-pill transition-linear" data-bs-toggle="modal" data-bs-target="#exampleModal2" href="javascript:void(0)">Apply now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title f-color-43 f-size-24 text-center font-m-700" id="exampleModalLabel">Register Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" class="login-apply-form rounded">
+                        <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+                        <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+                        <input type="email" name="email" id="email" placeholder="E-Maill Address" required>
+                        <input type="password" name="password" id="password" placeholder="Choose Password" required>
+                        <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required>
+                        <label><input type="checkbox" required>  I agree with the terms and conditions</label>
+                        <button class="apply-btn d-inline-block text-center f-color-ff f-size-16 bg-color-43 rounded-pill transition-linear w-100 font-m-700" href="javascript:void(0)">Apply now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--==================== End Header Section ====================-->
+
+    <!--==================== Start Hero Section ====================-->
+    <section class="hero-section hero-bg2">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 col-xl-12">
+                    <div class="hero-title hero-title2">
+                        <h1 class="f-color-43 font-m-700 f-size-40 mb-10">
+                            Innovation for education and society
+                        </h1>
+                        <p class="f-color-5a mb-30">
+                            Our interdisciplinary majors and minors mean you can chart your own course for academic success.
+                        </p>
+                        <a href="#" class="hero-btn bg-color-43 f-color-ff text-center transition-linear rounded-pill">Visit our Campus </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==================== End Hero Section ====================-->
+
+    <main>
+        <!--==================== Start Deparment Section ====================-->
+        <section class="dept-section dept-section2" id="deparments">
+            <div class="container">
+                <article class="section-title section-title2 text-center mb-65">
+                    <h2 class="f-size-40 f-color-25 font-ws-700 text-capitalize mb-15">Our Department</h2>
+                    <p class="f-size-16 f-color-5a mx-auto pw">A hundred thousand grateful loves to your dear papa and mamma. Is your poor brother recovered of his rack-punch? Oh, dear! Oh, dear! How men should beware of wicked punch!</p>
+                </article>
+                <article class="row g-5">
+                    <!-- Single Dept Box a1 -->
+                    <article class="col-md-4 col-sm-6">
+                        <a href="javascript:void(0)" class="single-dept-box d-block transition-linear bg-color-f1 text-center rounded">
+                            <img src="assets/images/icon/icon1.png" alt="Dept Icon" class="img-fluid mb-35">
+                            <h3 class="f-size-30 font-ws-700 f-color-25 text-capitalize">Engineering</h3>
+                        </a>
+                    </article>
+                    <!-- Single Dept Box 2 -->
+                    <article class="col-md-4 col-sm-6">
+                        <a href="javascript:void(0)" class="single-dept-box d-block transition-linear bg-color-e3 text-center rounded">
+                            <img src="assets/images/icon/icon2.png" alt="Dept Icon" class="img-fluid mb-35">
+                            <h3 class="f-size-30 font-ws-700 f-color-25 text-capitalize">Accounting</h3>
+                        </a>
+                    </article>
+                    <!-- Single Dept Box 3 -->
+                    <article class="col-md-4 col-sm-6">
+                        <a href="javascript:void(0)" class="single-dept-box d-block transition-linear bg-color-fb text-center rounded">
+                            <img src="assets/images/icon/icon3.png" alt="Dept Icon" class="img-fluid mb-35">
+                            <h3 class="f-size-30 font-ws-700 f-color-25 text-capitalize">Creative</h3>
+                        </a>
+                    </article>
+                    <!-- Single Dept Box 4 -->
+                    <article class="col-md-4 col-sm-6">
+                        <a href="javascript:void(0)" class="single-dept-box d-block transition-linear bg-color-fb text-center rounded">
+                            <img src="assets/images/icon/icon4.png" alt="Dept Icon" class="img-fluid mb-35">
+                            <h3 class="f-size-30 font-ws-700 f-color-25 text-capitalize">Design</h3>
+                        </a>
+                    </article>
+                    <!-- Single Dept Box 5 -->
+                    <article class="col-md-4 col-sm-6">
+                        <a href="javascript:void(0)" class="single-dept-box d-block transition-linear bg-color-f3 text-center rounded">
+                            <img src="assets/images/icon/icon5.png" alt="Dept Icon" class="img-fluid mb-35">
+                            <h3 class="f-size-30 font-ws-700 f-color-25 text-capitalize">Physics</h3>
+                        </a>
+                    </article>
+                    <!-- Single Dept Box 6 -->
+                    <article class="col-md-4 col-sm-6">
+                        <a href="javascript:void(0)" class="single-dept-box d-block transition-linear bg-color-e3f text-center rounded">
+                            <img src="assets/images/icon/icon6.png" alt="Dept Icon" class="img-fluid mb-35">
+                            <h3 class="f-size-30 font-ws-700 f-color-25 text-capitalize">Chemistry</h3>
+                        </a>
+                    </article>
+                </article>
+            </div>
+        </section>
+        <!--==================== End Dept Section ====================-->
+
+        <!--==================== Start About-chairman Section ====================-->
+        <section class="about-chairman pt-115 pb-200" id="about">
+            <div class="container">
+                <article class="row align-items-center">
+                    <article class="col-md-12 col-lg-6">
+                        <div class="play-img position-relative">
+                            <img src="assets/images/side-img/play-img2.png" alt="Video Play Img" class="img-fluid">
+                            <div class="play-btn">
+                                <a href="https://youtu.be/HndV87XpkWg" data-lity class="d-block"><span class="f-size-40 text-center f-color-ff bg-color-43 rounded-pill"><i class="demo-icon icon-play-1"></i></span></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-12 col-lg-6">
+                        <div class="about-desc ms-50">
+                            <h3 class="f-color-25 f-size-40 font-m-700 mb-25">Limitless learning, more possibilities
+                            </h3>
+                            <p class="f-color-5a">The University of Rochester is one of the country's top-tier research universities. Our campuses are home to 200 academic majors, more than 2,000 faculty and instructional staff, and some 10,000 students—approximately half
+                                of whom are women.</p>
+                            <p class="f-color-5a mt-40 d-none d-sm-block">Learning at the University of Rochester is also on a very personal scale. Rochester remains one of the smallest and most collegiate among top research universities, with smaller classes, a low 10:1 student to teacher ratio,
+                                and increased interactions with faculty.</p>
+                            <div class="count-number mt-35">
+                                <div class="counter-up d-inline-block me-65">
+                                    <span class="counter f-size-40 f-color-ffc font-m-700">4000</span>
+                                    <p class="f-size-20 f-color-ffc font-m-300 text-capitalize">Students</p>
+                                </div>
+                                <div class="counter-up d-inline-block me-65">
+                                    <span class="counter f-size-40 f-color-ff5 font-m-700">260</span>
+                                    <p class="f-size-20 f-color-ff5 font-m-300 text-capitalize">Courses</p>
+                                </div>
+                                <div class="counter-up d-inline-block">
+                                    <span class="counter f-size-40 f-color-43 font-m-700">5679</span>
+                                    <p class="f-size-20 f-color-43 font-m-300 text-capitalize">Hours video</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </article>
+            </div>
+        </section>
+        <!--==================== End About-chairman Section ====================-->
+
+        <!--==================== Start Cta Section ====================-->
+        <section class="cta-section cta-bg pb-110" id="contact">
+            <div class="container">
+                <article class="row">
+                    <article class="col-md-6 col-lg-7">
+                        <div class="cta-title">
+                            <p class="f-color-25 f-size-16 font-m-400 text-uppercase">Start your courses! <span class="d-inline">Try now for free</span></p>
+                            <h2 class="f-size-40 font-m-700 f-color-25">Are you ready to work faster?</h2>
+                        </div>
+                    </article>
+                    <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1">
+                        <form action="#" class="sign-up-form bg-color-ff rounded position-relative">
+                            <p class="font-m-400 f-size-24 text-capitalize text-center mb-30">Apply Now</p>
+                            <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+                            <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+                            <input type="email" name="email" id="email" placeholder="E-Maill Address" required>
+                            <input type="password" name="password" id="password" placeholder="Choose Password" required>
+                            <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required>
+                            <label><input type="checkbox" required>  I agree with the terms and conditions</label>
+                            <div class="signup-btn d-flex align-items-center justify-content-between mt-20">
+                                <button class="apply-btn d-inline-block text-center f-color-ff f-size-16 bg-color-43 rounded-pill transition-linear">Apply now</button>
+                                <a href="tel:+49 123 456 789">
+                                    <p class="f-color-5a font-ws-500 f-size-14">or call us</p>
+                                    <p class="f-color-5a font-ws-500 f-size-14 ">+49 123 456 789</p>
+                                </a>
+                            </div>
+                            <a href="javascript:void(0)" class="already-account f-color-5a font-ws-500 f-size-16 mt-30" data-bs-toggle="modal" data-bs-target="#exampleModal"><abbr title="Click Here">I already have an account</abbr></a>
+                        </form>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title f-color-43 f-size-24 text-center font-m-700" id="exampleModalLabel">Login Form</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="#" class="login-form rounded">
+                                            <input type="text" name="name" id="name" placeholder="Name" required>
+                                            <input type="password" name="password" id="password" placeholder="Password" required>
+                                            <label class="mb-20">
+                                                <input type="checkbox" checked="checked" name="remember"> Remember me
+                                            </label>
+                                            <button type="submit" class="bg-color-43 f-color-ff w-100">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!--==================== End Cta Section ====================-->
+
+        <!--==================== Start News Section ====================-->
+        <section class="news-section pb-110" id="news">
+            <div class="container">
+                <article class="row align-items-center g-5">
+                    <article class="col-md-9 col-xl-8">
+                        <div class="news-title">
+                            <h3 class="f-size-40 font-m-700 f-color-43 text-capitalize mb-05">Our University News</h3>
+                            <p class="f-size-16 f-color-5a f-size-16">A hundred thousand grateful loves to your dear papa and mamma. Is your poor brother recovered of his rack-punch? Oh, dear! Oh, dear! How men should beware of wicked punch!</p>
+                        </div>
+                    </article>
+                    <article class="col-md-3 col-xl-4">
+                        <div class="news-btn text-md-end">
+                            <a class="apply-btn news-btn d-inline-block text-center f-color-ff f-size-16 bg-color-43 rounded-pill transition-linear" href="javascript:void(0)">All News Post</a>
+                        </div>
+                    </article>
+                    <div class="border mb-60 mt-60"></div>
+                    <!-- Single News Content 1 -->
+                    <article class="col-md-6 mb-25 pe-65">
+                        <div class="news-content">
+                            <h3 class="f-size-30 font-m-700 f-color-25 mb-05">I am from France</h3>
+                            <p class="f-color-5a f-size-16">Now the races of these two have been for some ages utterly extinct, and besides to discourse any further of them would not be at all to my purpose.</p>
+                        </div>
+                        <div class="news-info d-flex align-items-center justify-content-between">
+                            <div class="news-icon">
+                                <span class="f-size-16 f-color-5a me-15"><i class="demo-icon icon-heart me-05"></i>23</span>
+                                <span class="f-size-16 f-color-5a"><i class="demo-icon icon-comment me-05"></i>50</span>
+                            </div>
+                            <div class="news-date">
+                                <p class="f-size-12 f-color-5a text-uppercase">5 November</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Single News Content 2 -->
+                    <article class="col-md-6 mb-25">
+                        <div class="news-content">
+                            <h3 class="f-size-30 font-m-700 f-color-25 mb-05">Out of the Darkness</h3>
+                            <p class="f-color-5a f-size-16">Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.</p>
+                        </div>
+                        <div class="news-info d-flex align-items-center justify-content-between">
+                            <div class="news-icon">
+                                <span class="f-size-16 f-color-5a me-15"><i class="demo-icon icon-heart f-color-43 me-05"></i>423</span>
+                                <span class="f-size-16 f-color-5a"><i class="demo-icon icon-comment me-05"></i>4523</span>
+                            </div>
+                            <div class="news-date">
+                                <p class="f-size-12 f-color-5a text-uppercase">5 November</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Single News Content 3 -->
+                    <article class="col-md-6 mb-25 pe-65">
+                        <div class="news-content">
+                            <h3 class="f-size-30 font-m-700 f-color-25 mb-05">Tears for my Mom</h3>
+                            <p class="f-color-5a f-size-16">It was some time before he obtained any answer, and the reply, when made, was unpropitious.</p>
+                        </div>
+                        <div class="news-info d-flex align-items-center justify-content-between">
+                            <div class="news-icon">
+                                <span class="f-size-16 f-color-5a me-15"><i class="demo-icon icon-heart me-05"></i>234</span>
+                                <span class="f-size-16 f-color-5a"><i class="demo-icon icon-comment me-05"></i>2345</span>
+                            </div>
+                            <div class="news-date">
+                                <p class="f-size-12 f-color-5a text-uppercase">5 November</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Single News Content 4 -->
+                    <article class="col-md-6 mb-25">
+                        <div class="news-content">
+                            <h3 class="f-size-30 font-m-700 f-color-25 mb-05">How the internet is uniting the world</h3>
+                            <p class="f-color-5a">This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.</p>
+                        </div>
+                        <div class="news-info d-flex align-items-center justify-content-between">
+                            <div class="news-icon">
+                                <span class="f-size-16 f-color-5a me-15"><i class="demo-icon icon-heart me-05"></i>263</span>
+                                <span class="f-size-16 f-color-5a"><i class="demo-icon icon-comment f-color-43 me-05"></i>2339</span>
+                            </div>
+                            <div class="news-date">
+                                <p class="f-size-12 f-color-5a text-uppercase">5 November</p>
+                            </div>
+                        </div>
+                    </article>
+                </article>
+            </div>
+        </section>
+        <!--==================== End News Section ====================-->
+
+        <!--==================== Start Footer Section ====================-->
+        <footer>
+            <section class="footer-section bg-color-25 pt-75 pb-75">
+                <div class="container">
+                    <article class="row">
+                        <article class="col-md-6 col-xl-3">
+                            <div class="footer-widget">
+                                <div class="footer-logo"><img src="assets/images/logo/footer-logo.png" alt="Logo" class="img-fluid"></div>
+                                <p class="f-size-14 f-color-96 font-r-400 mt-20">Edumodo focuses on creating magnificent education websites with ease. Take the lead in the race with Learned.
+                                </p>
+                                <div class="border mt-20"></div>
+                                <ul class="footer-links mt-20">
+                                    <li class="d-inline-block">
+                                        <a href="javascript:void(0)"><span class="f-size-20 f-color-4a"><i class="demo-icon icon-twitter-squared"></i></span></a>
+                                    </li>
+                                    <li class="d-inline-block">
+                                        <a href="javascript:void(0)"><span class="f-size-20 f-color-4a"><i class="demo-icon icon-linkedin-squared"></i></span>
+                                    </li>
+                                    <li class="d-inline-block">
+                                        <a href="javascript:void(0)"><span class="f-size-20 f-color-4a"><i class="demo-icon icon-facebook-squared"></i></span></a>
+                                    </li>
+                                    <li class="d-inline-block">
+                                        <a href="javascript:void(0)"><span class="f-size-20 f-color-4a"><i class="demo-icon icon-skype"></i></span></a>
+                                    </li>
+                                    <li class="d-inline-block">
+                                        <a href="javascript:void(0)"><span class="f-size-20 f-color-4a"><i class="demo-icon icon-pinterest-squared"></i></span></a>
+                                    </li>
+                                    <li class="d-inline-block">
+                                        <a href="javascript:void(0)"><span class="f-size-20 f-color-4a"><i class="demo-icon icon-apple"></i></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article class="col-md-5 offset-md-1 offset-xl-0 col-xl-3">
+                            <div class="footer-widget">
+                                <h5 class="f-size-14 f-color-ff font-r-400 mb-40 text-uppercase">FEATURED PROGRAMS</h5>
+                                <div class="footer-content">
+                                    <span class="f-size-14 f-color-96 font-r-400 mb-10 d-block">Fixed responsive issue - <small class="f-color-6b">Just Now</small></span>
+                                    <span class="f-size-14 f-color-96 font-r-400 mb-10 d-block">New portfolio grid layout - <small class="f-color-6b">Today</small></span>
+                                    <span class="f-size-14 f-color-96 font-r-400 mb-10 d-block">Tested & approved WP 3.6 - <small class="f-color-6b">5 Hours Ago</small></span>
+                                    <span class="f-size-14 f-color-96 font-r-400 mb-10 d-block">Fixed google map issue - <small class="f-color-6b">Yesterday</small></span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-3">
+                            <div class="footer-widget">
+                                <h5 class="f-size-14 f-color-ff font-r-400 mb-40 text-uppercase">Learning</h5>
+                                <ul class="footer-info footer-content">
+                                    <li class="d-block">
+                                        <a href="javascript:void(0)" class="f-color-96 f-size-14 font-r-400">Our Plans</a>
+                                    </li>
+                                    <li class="d-block">
+                                        <a href="javascript:void(0)" class="f-color-96 f-size-14 font-r-400">Free Trial</a>
+                                    </li>
+                                    <li class="d-block">
+                                        <a href="javascript:void(0)" class="f-color-96 f-size-14 font-r-400">Academic Solutions</a>
+                                    </li>
+                                    <li class="d-block">
+                                        <a href="javascript:void(0)" class="f-color-96 f-size-14 font-r-400">Business Solutions</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article class="col-sm-8 col-md-5 col-xl-3 offset-md-1 offset-lg-0">
+                            <div class="footer-widget">
+                                <h5 class="f-size-14 f-color-ff font-r-400 mb-40 text-uppercase">Support Forum</h5>
+                                <div class="fourm-content footer-content">
+                                    <p class="f-size-14 f-color-96 font-r-400 mt-20 mb-15">Write your email into below field and join our quick support forum.
+                                    </p>
+                                    <form action="#" class="forum position-relative">
+                                        <input type="text" name="text" id="text" placeholder="Email address" class="f-size-12 w-75">
+                                        <button type="submit" class="text-uppercase bg-color-ffc f-color-ff f-size-12 font-r-400 w-25">Get Help</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </article>
+                    </article>
+                </div>
+            </section>
+            <section class="footer-bottom footer-bg bg-color-1d pt-10 pb-10">
+                <div class="container">
+                    <article class="row align-items-center justify-content-center">
+                        <article class="col-md-12 col-lg-6 text-center text-lg-start">
+                            <div class="left-side mb-05 mb-lg-0">
+                                <p class="f-size-14 f-color-6b font-r-400">Copyright &copy; 2019 Learned</p>
+                            </div>
+                        </article>
+                        <article class="col-md-12 col-lg-6 text-center text-lg-end">
+                            <div class="right-side">
+                                <ul>
+                                    <li class="d-inline-block me-15">
+                                        <a href="javascript:void(0)" class="f-color-6b f-size-14 font-r-400 text-capitalize">Site Map</a>
+                                    </li>
+                                    <li class="d-inline-block me-15">
+                                        <a href="javascript:void(0)" class="f-color-6b f-size-14 font-r-400 text-capitalize">Privacy Policy</a>
+                                    </li>
+                                    <li class="d-inline-block me-15">
+                                        <a href="javascript:void(0)" class="f-color-6b f-size-14 font-r-400 text-capitalize">Website Use Policy</a>
+                                    </li>
+                                    <li class="d-inline-block">
+                                        <a href="javascript:void(0)" class="f-color-6b f-size-14 font-r-400 text-capitalize">Cookie Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </article>
+                </div>
+            </section>
+        </footer>
+        <!--==================== End Footer Section ====================-->
+    </main>
+
+    <!--==================== Back To Top Btn ====================-->
+    <button type="button" id="scroll-up-btn" title="Go to top" class="d-flex align-items-center justify-content-center rounded-pill">
+		<span class="f-color-ffc f-size-30"><i class="demo-icon icon-up-hand"></i></span>
+    </button>
+
+    <!--------- jQuery jS --------->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!--------- Bootstrap jS --------->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--------- Waypoints jS --------->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!--------- CounterUP jS --------->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--------- Wow jS --------->
+    <script src="assets/js/wow.min.js"></script>
+    <!--------- Lity jS --------->
+    <script src="assets/js/lity.min.js"></script>
+    <!--------- Main jS --------->
+    <script src="assets/js/main.js"></script>
+    <!--------- Text jS --------->
+    <script type="text/javascript">
+        /*======= STICKY MENU =======*/
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop()) {
+                $("header").addClass('sticky-menu');
+            } else {
+                $("header").removeClass('sticky-menu');
+            }
+        });
+
+        /*===== MENU SHOW & HIDE HUMBURGER BTN =====*/
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+
+        /*===== SCROLL BACK TO TOP BTN =====*/
+        var mybutton = document.getElementById('scroll-up-btn');
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 300 ||
+                document.documentElement.scrollTop > 300
+            ) {
+                mybutton.style.opacity = '1';
+            } else {
+                mybutton.style.opacity = '0';
+            }
+        }
+        mybutton.addEventListener('click', topFunction);
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
+        // // LOADER
+        $(window).on("load", function() {
+            $("#pre-loader").fadeOut("slow");
+        });
+
+        /*=== WOW JS ===*/
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>
